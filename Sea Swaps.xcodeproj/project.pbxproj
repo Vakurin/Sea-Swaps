@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		758376CA1E8D417700F6C677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758376CC1E8D417700F6C677 /* Main.storyboard */; };
+		758376F51E8EDE4C00F6C677 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758376F41E8EDE4C00F6C677 /* Stickers.xcassets */; };
+		758376F91E8EDE4C00F6C677 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 758376F21E8EDE4C00F6C677 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7585DEFB1E892DDD0066F07D /* happy_adveture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7585DEFA1E892DDD0066F07D /* happy_adveture.mp3 */; };
+		7585DEFD1E8940880066F07D /* bubbleee.png in Resources */ = {isa = PBXBuildFile; fileRef = 7585DEFC1E8940880066F07D /* bubbleee.png */; };
+		7585DF031E8949730066F07D /* pickCoin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF021E8949720066F07D /* pickCoin.mp3 */; };
+		7585DF051E8954550066F07D /* misc_menu_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF041E8954550066F07D /* misc_menu_2.wav */; };
+		7585DF091E8956400066F07D /* negative.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF081E8956400066F07D /* negative.wav */; };
+		7585DF0B1E8957E50066F07D /* positive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF0A1E8957E50066F07D /* positive.wav */; };
+		7594A1DE1E8445E500FAC148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A1DD1E8445E500FAC148 /* AppDelegate.swift */; };
+		7594A1EE1E8445E500FAC148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7594A1EC1E8445E500FAC148 /* LaunchScreen.storyboard */; };
+		7594A1F61E84463900FAC148 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A1F51E84463900FAC148 /* GameScene.sks */; };
+		7594A1F81E84465400FAC148 /* bubble.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A1F71E84465400FAC148 /* bubble.sks */; };
+		7594A1FA1E84465B00FAC148 /* water.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A1F91E84465B00FAC148 /* water.sks */; };
+		7594A2021E84469100FAC148 /* StartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2011E84469100FAC148 /* StartsViewController.swift */; };
+		7594A2041E8446A200FAC148 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2031E8446A200FAC148 /* GameScene.swift */; };
+		7594A2061E8446A800FAC148 /* Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2051E8446A800FAC148 /* Touches.swift */; };
+		7594A2081E8446AD00FAC148 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2071E8446AD00FAC148 /* Animation.swift */; };
+		7594A20A1E8446B600FAC148 /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2091E8446B600FAC148 /* Physics.swift */; };
+		7594A20E1E8446CA00FAC148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7594A20D1E8446CA00FAC148 /* Assets.xcassets */; };
+		7594A2141E8446F800FAC148 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A20F1E8446F800FAC148 /* GameViewController.swift */; };
+		7594A2151E8446F800FAC148 /* HeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2101E8446F800FAC148 /* HeroesViewController.swift */; };
+		7594A2161E8446F800FAC148 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2111E8446F800FAC148 /* PauseViewController.swift */; };
+		7594A2171E8446F800FAC148 /* PreGameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2121E8446F800FAC148 /* PreGameOverViewController.swift */; };
+		7594A2181E8446F800FAC148 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2131E8446F800FAC148 /* GameOverViewController.swift */; };
+		7594A21A1E84476500FAC148 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2191E84476500FAC148 /* GameSettings.swift */; };
+		7594A21E1E8582C800FAC148 /* ContiniueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A21D1E8582C800FAC148 /* ContiniueViewController.swift */; };
+		7594A2211E871B8200FAC148 /* sub1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A2201E871B8100FAC148 /* sub1.sks */; };
+		75E8E8AF1E94D28200B2F65E /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E8E8AE1E94D28200B2F65E /* UnityAds.framework */; };
+		75F2DC091E89625800706855 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75F2DC081E89625800706855 /* Click.mp3 */; };
+		75F2DC0B1E89715C00706855 /* heroesclick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 75F2DC0A1E89715C00706855 /* heroesclick.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		758376F71E8EDE4C00F6C677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7594A1D21E8445E500FAC148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758376F11E8EDE4C00F6C677;
+			remoteInfo = Stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		758376FD1E8EDE4C00F6C677 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				758376F91E8EDE4C00F6C677 /* Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		758376C71E8D3DA000F6C677 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		758376CB1E8D417700F6C677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		758376CE1E8D418600F6C677 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		758376D01E8D418900F6C677 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		758376D11E8D443800F6C677 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		758376D21E8D444B00F6C677 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		758376D31E8D445700F6C677 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		758376F21E8EDE4C00F6C677 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		758376F41E8EDE4C00F6C677 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		758376F61E8EDE4C00F6C677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7585DEFA1E892DDD0066F07D /* happy_adveture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happy_adveture.mp3; sourceTree = "<group>"; };
+		7585DEFC1E8940880066F07D /* bubbleee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleee.png; sourceTree = "<group>"; };
+		7585DF021E8949720066F07D /* pickCoin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pickCoin.mp3; sourceTree = "<group>"; };
+		7585DF041E8954550066F07D /* misc_menu_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = misc_menu_2.wav; sourceTree = "<group>"; };
+		7585DF081E8956400066F07D /* negative.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = negative.wav; sourceTree = "<group>"; };
+		7585DF0A1E8957E50066F07D /* positive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = positive.wav; sourceTree = "<group>"; };
+		7594A1DA1E8445E500FAC148 /* Sea Swaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sea Swaps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7594A1DD1E8445E500FAC148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7594A1ED1E8445E500FAC148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7594A1EF1E8445E500FAC148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7594A1F51E84463900FAC148 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		7594A1F71E84465400FAC148 /* bubble.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bubble.sks; sourceTree = "<group>"; };
+		7594A1F91E84465B00FAC148 /* water.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = water.sks; sourceTree = "<group>"; };
+		7594A2011E84469100FAC148 /* StartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartsViewController.swift; sourceTree = "<group>"; };
+		7594A2031E8446A200FAC148 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		7594A2051E8446A800FAC148 /* Touches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Touches.swift; sourceTree = "<group>"; };
+		7594A2071E8446AD00FAC148 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		7594A2091E8446B600FAC148 /* Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
+		7594A20D1E8446CA00FAC148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7594A20F1E8446F800FAC148 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "/Users/vakurin/Desktop/Sea Swap/Sea Swap/GameViewController.swift"; sourceTree = "<absolute>"; };
+		7594A2101E8446F800FAC148 /* HeroesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
+		7594A2111E8446F800FAC148 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
+		7594A2121E8446F800FAC148 /* PreGameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreGameOverViewController.swift; sourceTree = "<group>"; };
+		7594A2131E8446F800FAC148 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		7594A2191E84476500FAC148 /* GameSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		7594A21D1E8582C800FAC148 /* ContiniueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiniueViewController.swift; sourceTree = "<group>"; };
+		7594A2201E871B8100FAC148 /* sub1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sub1.sks; sourceTree = "<group>"; };
+		75E8E8AE1E94D28200B2F65E /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
+		75F2DC081E89625800706855 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
+		75F2DC0A1E89715C00706855 /* heroesclick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heroesclick.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7594A1D71E8445E500FAC148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E8E8AF1E94D28200B2F65E /* UnityAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		758376F31E8EDE4C00F6C677 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				758376F41E8EDE4C00F6C677 /* Stickers.xcassets */,
+				758376F61E8EDE4C00F6C677 /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
+		7585DF061E89545E0066F07D /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				75F2DC081E89625800706855 /* Click.mp3 */,
+				7585DF041E8954550066F07D /* misc_menu_2.wav */,
+				7585DF0A1E8957E50066F07D /* positive.wav */,
+				7585DF081E8956400066F07D /* negative.wav */,
+				75F2DC0A1E89715C00706855 /* heroesclick.wav */,
+				7585DF021E8949720066F07D /* pickCoin.mp3 */,
+				7585DEFA1E892DDD0066F07D /* happy_adveture.mp3 */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		7585DF071E89546D0066F07D /* Emitters */ = {
+			isa = PBXGroup;
+			children = (
+				7594A1F51E84463900FAC148 /* GameScene.sks */,
+				7594A1F71E84465400FAC148 /* bubble.sks */,
+				7594A1F91E84465B00FAC148 /* water.sks */,
+				7594A2201E871B8100FAC148 /* sub1.sks */,
+			);
+			name = Emitters;
+			sourceTree = "<group>";
+		};
+		7594A1D11E8445E500FAC148 = {
+			isa = PBXGroup;
+			children = (
+				7594A1DC1E8445E500FAC148 /* Sea Swap */,
+				758376F31E8EDE4C00F6C677 /* Stickers */,
+				7594A1DB1E8445E500FAC148 /* Products */,
+				75E8E8AE1E94D28200B2F65E /* UnityAds.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		7594A1DB1E8445E500FAC148 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7594A1DA1E8445E500FAC148 /* Sea Swaps.app */,
+				758376F21E8EDE4C00F6C677 /* Stickers.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7594A1DC1E8445E500FAC148 /* Sea Swap */ = {
+			isa = PBXGroup;
+			children = (
+				7594A1DD1E8445E500FAC148 /* AppDelegate.swift */,
+				7594A2051E8446A800FAC148 /* Touches.swift */,
+				7594A2091E8446B600FAC148 /* Physics.swift */,
+				7594A2071E8446AD00FAC148 /* Animation.swift */,
+				7594A2191E84476500FAC148 /* GameSettings.swift */,
+				7594A2031E8446A200FAC148 /* GameScene.swift */,
+				7594A21F1E8582D900FAC148 /* VC */,
+				7594A20D1E8446CA00FAC148 /* Assets.xcassets */,
+				7585DEFC1E8940880066F07D /* bubbleee.png */,
+				7585DF071E89546D0066F07D /* Emitters */,
+				7585DF061E89545E0066F07D /* Sound */,
+				7594A1EC1E8445E500FAC148 /* LaunchScreen.storyboard */,
+				758376CC1E8D417700F6C677 /* Main.storyboard */,
+				7594A1EF1E8445E500FAC148 /* Info.plist */,
+			);
+			path = "Sea Swap";
+			sourceTree = "<group>";
+		};
+		7594A21F1E8582D900FAC148 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7594A20F1E8446F800FAC148 /* GameViewController.swift */,
+				7594A2131E8446F800FAC148 /* GameOverViewController.swift */,
+				7594A2011E84469100FAC148 /* StartsViewController.swift */,
+				7594A2101E8446F800FAC148 /* HeroesViewController.swift */,
+				7594A2111E8446F800FAC148 /* PauseViewController.swift */,
+				7594A2121E8446F800FAC148 /* PreGameOverViewController.swift */,
+				7594A21D1E8582C800FAC148 /* ContiniueViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		758376F11E8EDE4C00F6C677 /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758376FA1E8EDE4C00F6C677 /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				758376F01E8EDE4C00F6C677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = 758376F21E8EDE4C00F6C677 /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+		7594A1D91E8445E500FAC148 /* Sea Swaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7594A1F21E8445E500FAC148 /* Build configuration list for PBXNativeTarget "Sea Swaps" */;
+			buildPhases = (
+				7594A1D61E8445E500FAC148 /* Sources */,
+				7594A1D71E8445E500FAC148 /* Frameworks */,
+				7594A1D81E8445E500FAC148 /* Resources */,
+				758376FD1E8EDE4C00F6C677 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758376F81E8EDE4C00F6C677 /* PBXTargetDependency */,
+			);
+			name = "Sea Swaps";
+			productName = "Sea Swap";
+			productReference = 7594A1DA1E8445E500FAC148 /* Sea Swaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7594A1D21E8445E500FAC148 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Vakurin Maxim";
+				TargetAttributes = {
+					758376F11E8EDE4C00F6C677 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 88KK38YT5W;
+						ProvisioningStyle = Automatic;
+					};
+					7594A1D91E8445E500FAC148 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 88KK38YT5W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7594A1D51E8445E500FAC148 /* Build configuration list for PBXProject "Sea Swaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 7594A1D11E8445E500FAC148;
+			productRefGroup = 7594A1DB1E8445E500FAC148 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7594A1D91E8445E500FAC148 /* Sea Swaps */,
+				758376F11E8EDE4C00F6C677 /* Stickers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		758376F01E8EDE4C00F6C677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758376F51E8EDE4C00F6C677 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7594A1D81E8445E500FAC148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7585DF051E8954550066F07D /* misc_menu_2.wav in Resources */,
+				7594A1F61E84463900FAC148 /* GameScene.sks in Resources */,
+				7594A1F81E84465400FAC148 /* bubble.sks in Resources */,
+				7594A2211E871B8200FAC148 /* sub1.sks in Resources */,
+				758376CA1E8D417700F6C677 /* Main.storyboard in Resources */,
+				7594A1EE1E8445E500FAC148 /* LaunchScreen.storyboard in Resources */,
+				7594A1FA1E84465B00FAC148 /* water.sks in Resources */,
+				75F2DC0B1E89715C00706855 /* heroesclick.wav in Resources */,
+				7585DEFB1E892DDD0066F07D /* happy_adveture.mp3 in Resources */,
+				7585DF091E8956400066F07D /* negative.wav in Resources */,
+				7585DEFD1E8940880066F07D /* bubbleee.png in Resources */,
+				7594A20E1E8446CA00FAC148 /* Assets.xcassets in Resources */,
+				7585DF031E8949730066F07D /* pickCoin.mp3 in Resources */,
+				75F2DC091E89625800706855 /* Click.mp3 in Resources */,
+				7585DF0B1E8957E50066F07D /* positive.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7594A1D61E8445E500FAC148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7594A2061E8446A800FAC148 /* Touches.swift in Sources */,
+				7594A2021E84469100FAC148 /* StartsViewController.swift in Sources */,
+				7594A21A1E84476500FAC148 /* GameSettings.swift in Sources */,
+				7594A21E1E8582C800FAC148 /* ContiniueViewController.swift in Sources */,
+				7594A2041E8446A200FAC148 /* GameScene.swift in Sources */,
+				7594A2081E8446AD00FAC148 /* Animation.swift in Sources */,
+				7594A2141E8446F800FAC148 /* GameViewController.swift in Sources */,
+				7594A2171E8446F800FAC148 /* PreGameOverViewController.swift in Sources */,
+				7594A2151E8446F800FAC148 /* HeroesViewController.swift in Sources */,
+				7594A2181E8446F800FAC148 /* GameOverViewController.swift in Sources */,
+				7594A2161E8446F800FAC148 /* PauseViewController.swift in Sources */,
+				7594A20A1E8446B600FAC148 /* Physics.swift in Sources */,
+				7594A1DE1E8445E500FAC148 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		758376F81E8EDE4C00F6C677 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758376F11E8EDE4C00F6C677 /* Stickers */;
+			targetProxy = 758376F71E8EDE4C00F6C677 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		758376CC1E8D417700F6C677 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758376CB1E8D417700F6C677 /* Base */,
+				758376CE1E8D418600F6C677 /* en */,
+				758376D01E8D418900F6C677 /* fr */,
+				758376D11E8D443800F6C677 /* de */,
+				758376D21E8D444B00F6C677 /* es */,
+				758376D31E8D445700F6C677 /* ru */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7594A1EC1E8445E500FAC148 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7594A1ED1E8445E500FAC148 /* Base */,
+				758376C71E8D3DA000F6C677 /* fr */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		758376FB1E8EDE4C00F6C677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 88KK38YT5W;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vakurin.Sea-Swaps.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		758376FC1E8EDE4C00F6C677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 88KK38YT5W;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vakurin.Sea-Swaps.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7594A1F01E8445E500FAC148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7594A1F11E8445E500FAC148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7594A1F31E8445E500FAC148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88KK38YT5W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Sea Swap/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Vakurin.Sea-Swaps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7594A1F41E8445E500FAC148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88KK38YT5W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Sea Swap/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Vakurin.Sea-Swaps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		758376FA1E8EDE4C00F6C677 /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758376FB1E8EDE4C00F6C677 /* Debug */,
+				758376FC1E8EDE4C00F6C677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7594A1D51E8445E500FAC148 /* Build configuration list for PBXProject "Sea Swaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7594A1F01E8445E500FAC148 /* Debug */,
+				7594A1F11E8445E500FAC148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7594A1F21E8445E500FAC148 /* Build configuration list for PBXNativeTarget "Sea Swaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7594A1F31E8445E500FAC148 /* Debug */,
+				7594A1F41E8445E500FAC148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7594A1D21E8445E500FAC148 /* Project object */;
+}

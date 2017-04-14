@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "CONTINUE"; ObjectID = "ATD-L9-chk"; */
+"ATD-L9-chk.text" = "CONTINUAR";
+
+/* Class = "UILabel"; text = "YOUR SCORE"; ObjectID = "LhJ-Ao-CY4"; */
+"LhJ-Ao-CY4.text" = "TU PUNTUACIÓN";
+
+/* Class = "UILabel"; text = "NO"; ObjectID = "Nqk-Hd-o0s"; */
+"Nqk-Hd-o0s.text" = "NO";
+
+/* Class = "UILabel"; text = "PAUSED"; ObjectID = "Pnn-8f-D6v"; */
+"Pnn-8f-D6v.text" = "En pausa";
+
+/* Class = "UILabel"; text = "CONTINUE ?"; ObjectID = "Rfm-Hy-3QO"; */
+"Rfm-Hy-3QO.text" = "CONTINUAR ?";
+
+/* Class = "UILabel"; text = "BEST"; ObjectID = "S18-Wl-eS3"; */
+"S18-Wl-eS3.text" = "MEJOR";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "SBM-42-OhP"; */
+"SBM-42-OhP.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "U7F-CM-9tY"; */
+"U7F-CM-9tY.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "boF-OW-dOE"; */
+"boF-OW-dOE.text" = "0";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "fGA-3c-H1u"; */
+"fGA-3c-H1u.text" = "10";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "fQ8-J6-bPD"; */
+"fQ8-J6-bPD.text" = "0";
+
+/* Class = "UILabel"; text = "FREE"; ObjectID = "lFE-xR-Vjw"; */
+"lFE-xR-Vjw.text" = "FREE";
+
+/* Class = "UILabel"; text = "HEROES"; ObjectID = "q7J-Jf-Kyk"; */
+"q7J-Jf-Kyk.text" = "Héroes";
