@@ -15,7 +15,7 @@ protocol PauseViewControllerDelegate {
 }
 
 class PauseViewController: UIViewController {
-    //2
+
     var delegate: PauseViewControllerDelegate!
     
     @IBAction func heroesButtonPressed(_ sender: UIButton) {
@@ -31,18 +31,7 @@ class PauseViewController: UIViewController {
         delegate.pauseViewControllerPlayButtonPressed(viewController: self)
     }
     
-   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
 }

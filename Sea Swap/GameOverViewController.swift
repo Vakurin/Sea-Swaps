@@ -5,12 +5,10 @@
 //  Created by Максим Вакурин on 10.03.17.
 //  Copyright © 2017 Максим Вакурин. All rights reserved.
 //
-
 import UIKit
 import Social
 import UserNotifications
 import UnityAds
-
 
 protocol GameOverViewControllerDelegate {
     func gameOverViewControllerResetButton(gameOverViewController: GameOverViewController)
@@ -20,26 +18,15 @@ protocol GameOverViewControllerDelegate {
     func gameOverViewControllerHeroesButton(gameOverViewController: GameOverViewController)
 }
 
-
-
 class GameOverViewController: UIViewController, UNUserNotificationCenterDelegate, UnityAdsDelegate {
 
-    
-    
-
-    
     //создаем переменую которая принимает протокол
     var delegate: GameOverViewControllerDelegate!
     var gameSettings: GameSettings!
 
-    var timerIntervals = 60
-    
-    
     @IBOutlet weak var giftLabel: UIButton!
-    
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var bestScoreLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,28 +35,22 @@ class GameOverViewController: UIViewController, UNUserNotificationCenterDelegate
     }
     @IBAction func facebookShareButton(_ sender: UIButton) {
         delegate.gameOverViewControllerFacebookShareButton(gameOverViewController: self)
-        //создаем ViewController
-        let facebookShares = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-        //Начальный текст
-        facebookShares?.setInitialText("I just  \(gameSettings.highscore) scores in a brilliant game of #SeaSwaps on iPhone and iPad!")
-        //картинка
-        //facebookShares?.add(UIImage(named: "turtle.png"))
-        self.present(facebookShares!, animated: true, completion: nil)
+        
     }
     
     @IBAction func twitterShareButton(_ sender: UIButton) {
         delegate.gameOverViewControllerTwitterShareButton(gameOverViewController: self)
         let tweeterShares = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         //Начальный текст
-        tweeterShares?.setInitialText("I just  \(gameSettings.highscore) scores in a brilliant game of #SeaSwaps on iPhone and iPad!")
-        //картинка
+        tweeterShares?.setInitialText("I just  \(gameSettings.highscore) scores in a brilliant game of #SeaSwaps on iPhone!")
+        
         //tweeterShares?.add(UIImage(named: "fb.png"))
         self.present(tweeterShares!, animated: true, completion: nil)
+        
     }
     
     @IBAction func freeGiftButton(_ sender: UIButton) {
         delegate.gameOverViewControllerFreeGiftButton(gameOverViewController: self)
-        
     }
     @IBAction func heroesButton(_ sender: UIButton) {
         delegate.gameOverViewControllerHeroesButton(gameOverViewController: self)
@@ -90,27 +71,13 @@ class GameOverViewController: UIViewController, UNUserNotificationCenterDelegate
         
     }
     func unityAdsDidFinish(_ placementId: String, with state: UnityAdsFinishState) {
-        if state == .completed
-        {
-        
-        }
-        else {
-            
-        }
+
     }
-    
-    
-    //этот метод срабатывает когда что-то появляется 
-    
+
+    //этот метод срабатывает когда что-то появляется
     override func viewDidAppear(_ animated: Bool) {
         scoreLabel.text = "\(gameSettings.currentScore)"
         bestScoreLabel.text = "\(gameSettings.highscore)"
-
-        
-        
         super.viewDidAppear(animated)
     }
 }
-
-
-

@@ -4,17 +4,14 @@
 //
 //  Created by Максим Вакурин on 18.03.17.
 //  Copyright © 2017 Максим Вакурин. All rights reserved.
-//
 
 import Foundation
 import SpriteKit
 
 extension GameScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
         if !gameIsPaused {
             if let touch = touches.first {
-                //место прикосновения
                 let locationTouch = touch.location(in: self)
                 if atPoint(locationTouch) == fish {
                     lastlocation = locationTouch
@@ -23,11 +20,9 @@ extension GameScene {
             }
         }
     }
-    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !gameIsPaused {
             if let touch = touches.first {
-                //место прикосновения
                 let locationTouch = touch.location(in: self)
                 if fishPickedUp {
                     let translation = CGPoint(x: locationTouch.x - lastlocation.x, y: locationTouch.y - lastlocation.y)
@@ -44,5 +39,4 @@ extension GameScene {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         fishPickedUp = false
     }
-
 }

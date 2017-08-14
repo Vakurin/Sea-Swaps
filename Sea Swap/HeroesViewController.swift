@@ -7,21 +7,21 @@
 //
 
 import UIKit
-protocol heroesViewControllerDelegate {
+protocol HeroesViewControllerDelegate {
     func ViewControllerTurtleButtonPressed(viewController: HeroesViewController )
     func ViewControllerOctopusButtonPressed(viewController: HeroesViewController)
     func ViewControllerPinguinButtonPressed(viewController: HeroesViewController)
     func ViewControllerSubmarine1ButtonPressed(viewController: HeroesViewController)
     func ViewControllerSubmarine2ButtonPressed(viewController: HeroesViewController)
     func ViewControllerWalrusButtonPressed(viewController: HeroesViewController)
-    func ViewControllerWater_horseButtonPressed(viewController: HeroesViewController)
+    func ViewControllerWaterHorseButtonPressed(viewController: HeroesViewController)
     func ViewControllerCrabButtonPressed(viewController: HeroesViewController)
     func ViewControllerWhaleButtonPressed(viewController: HeroesViewController)
 }
 
 class HeroesViewController: UIViewController {
     
-    var delegate: heroesViewControllerDelegate!
+    var delegate: HeroesViewControllerDelegate!
     
 
     @IBAction func turtleButton(_ sender: UIButton) {
@@ -30,7 +30,6 @@ class HeroesViewController: UIViewController {
     
     @IBAction func octopusButton(_ sender: UIButton) {
         delegate.ViewControllerOctopusButtonPressed(viewController: self)
-       
     }
     
     @IBOutlet weak var octopusLabel: UIButton!
@@ -38,11 +37,14 @@ class HeroesViewController: UIViewController {
     @IBAction func pinguinButton(_ sender: UIButton) {
         delegate.ViewControllerPinguinButtonPressed(viewController: self)
     }
+    
     @IBOutlet weak var pinguin: UIButton!
+    
     @IBAction func submarine1Button(_ sender: UIButton) {
         delegate.ViewControllerSubmarine1ButtonPressed(viewController: self)
         
     }
+    
     @IBOutlet weak var submarine1Label: UIButton!
     
     
@@ -60,15 +62,15 @@ class HeroesViewController: UIViewController {
     @IBOutlet weak var walrus: UIButton!
     
     @IBAction func water_horseButton(_ sender: UIButton) {
-        delegate.ViewControllerWater_horseButtonPressed(viewController: self)
-    
-        
+        delegate.ViewControllerWaterHorseButtonPressed(viewController: self)
     }
-    @IBOutlet weak var water_horseLabel: UIButton!
+    
+    @IBOutlet weak var waterHorseLabel: UIButton!
     
     @IBAction func crabButton(_ sender: UIButton) {
         delegate.ViewControllerCrabButtonPressed(viewController: self)
     }
+    
     @IBOutlet weak var crabLabel: UIButton!
     
     
@@ -81,11 +83,6 @@ class HeroesViewController: UIViewController {
         super.viewDidLoad()
       
 
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

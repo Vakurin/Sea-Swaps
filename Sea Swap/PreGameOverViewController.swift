@@ -8,6 +8,8 @@
 
 import UIKit
 import UnityAds
+import SpriteKit
+
 protocol PreGameOverViewControllerDelegate {
     func continueViewControllerPlayButtonPressed(viewController: PreGameOverViewController)
     func noViewControllerHeroesButtonPressed(viewController: PreGameOverViewController)
@@ -70,9 +72,6 @@ class PreGameOverViewController: UIViewController, UnityAdsDelegate {
     }
     
  
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     override func viewDidAppear(_ animated: Bool) {
         start()
         super.viewDidAppear(animated)

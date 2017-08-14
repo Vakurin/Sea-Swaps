@@ -13,7 +13,6 @@
 		7585DEFB1E892DDD0066F07D /* happy_adveture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7585DEFA1E892DDD0066F07D /* happy_adveture.mp3 */; };
 		7585DEFD1E8940880066F07D /* bubbleee.png in Resources */ = {isa = PBXBuildFile; fileRef = 7585DEFC1E8940880066F07D /* bubbleee.png */; };
 		7585DF031E8949730066F07D /* pickCoin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF021E8949720066F07D /* pickCoin.mp3 */; };
-		7585DF051E8954550066F07D /* misc_menu_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF041E8954550066F07D /* misc_menu_2.wav */; };
 		7585DF091E8956400066F07D /* negative.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF081E8956400066F07D /* negative.wav */; };
 		7585DF0B1E8957E50066F07D /* positive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7585DF0A1E8957E50066F07D /* positive.wav */; };
 		7594A1DE1E8445E500FAC148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A1DD1E8445E500FAC148 /* AppDelegate.swift */; };
@@ -21,7 +20,6 @@
 		7594A1F61E84463900FAC148 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A1F51E84463900FAC148 /* GameScene.sks */; };
 		7594A1F81E84465400FAC148 /* bubble.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A1F71E84465400FAC148 /* bubble.sks */; };
 		7594A1FA1E84465B00FAC148 /* water.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A1F91E84465B00FAC148 /* water.sks */; };
-		7594A2021E84469100FAC148 /* StartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2011E84469100FAC148 /* StartsViewController.swift */; };
 		7594A2041E8446A200FAC148 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2031E8446A200FAC148 /* GameScene.swift */; };
 		7594A2061E8446A800FAC148 /* Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2051E8446A800FAC148 /* Touches.swift */; };
 		7594A2081E8446AD00FAC148 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2071E8446AD00FAC148 /* Animation.swift */; };
@@ -35,8 +33,15 @@
 		7594A21A1E84476500FAC148 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A2191E84476500FAC148 /* GameSettings.swift */; };
 		7594A21E1E8582C800FAC148 /* ContiniueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A21D1E8582C800FAC148 /* ContiniueViewController.swift */; };
 		7594A2211E871B8200FAC148 /* sub1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7594A2201E871B8100FAC148 /* sub1.sks */; };
+		75B165271F403EE70078B6F7 /* Emitters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B165261F403EE70078B6F7 /* Emitters.swift */; };
+		75B165291F40458C0078B6F7 /* GenerationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B165281F40458C0078B6F7 /* GenerationNode.swift */; };
+		75B1652B1F4046840078B6F7 /* CreationEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1652A1F4046840078B6F7 /* CreationEnemy.swift */; };
+		75B1652F1F4056C90078B6F7 /* SoundSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1652E1F4056C90078B6F7 /* SoundSettings.swift */; };
+		75B165311F4062C70078B6F7 /* LevelUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B165301F4062C70078B6F7 /* LevelUp.swift */; };
+		75B165331F409B040078B6F7 /* CreationHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B165321F409B040078B6F7 /* CreationHeroes.swift */; };
+		75B165351F409E960078B6F7 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B165341F409E960078B6F7 /* SceneManager.swift */; };
 		75E8E8AF1E94D28200B2F65E /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E8E8AE1E94D28200B2F65E /* UnityAds.framework */; };
-		75F2DC091E89625800706855 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75F2DC081E89625800706855 /* Click.mp3 */; };
+		75F2DC091E89625800706855 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75F2DC081E89625800706855 /* click.mp3 */; };
 		75F2DC0B1E89715C00706855 /* heroesclick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 75F2DC0A1E89715C00706855 /* heroesclick.wav */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +83,6 @@
 		7585DEFA1E892DDD0066F07D /* happy_adveture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happy_adveture.mp3; sourceTree = "<group>"; };
 		7585DEFC1E8940880066F07D /* bubbleee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleee.png; sourceTree = "<group>"; };
 		7585DF021E8949720066F07D /* pickCoin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pickCoin.mp3; sourceTree = "<group>"; };
-		7585DF041E8954550066F07D /* misc_menu_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = misc_menu_2.wav; sourceTree = "<group>"; };
 		7585DF081E8956400066F07D /* negative.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = negative.wav; sourceTree = "<group>"; };
 		7585DF0A1E8957E50066F07D /* positive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = positive.wav; sourceTree = "<group>"; };
 		7594A1DA1E8445E500FAC148 /* Sea Swaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sea Swaps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,13 +92,12 @@
 		7594A1F51E84463900FAC148 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		7594A1F71E84465400FAC148 /* bubble.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bubble.sks; sourceTree = "<group>"; };
 		7594A1F91E84465B00FAC148 /* water.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = water.sks; sourceTree = "<group>"; };
-		7594A2011E84469100FAC148 /* StartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartsViewController.swift; sourceTree = "<group>"; };
 		7594A2031E8446A200FAC148 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7594A2051E8446A800FAC148 /* Touches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Touches.swift; sourceTree = "<group>"; };
 		7594A2071E8446AD00FAC148 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		7594A2091E8446B600FAC148 /* Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		7594A20D1E8446CA00FAC148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7594A20F1E8446F800FAC148 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "/Users/vakurin/Desktop/Sea Swap/Sea Swap/GameViewController.swift"; sourceTree = "<absolute>"; };
+		7594A20F1E8446F800FAC148 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "/Users/vakurin/Desktop/GAME/Sea Swap/Sea Swap/GameViewController.swift"; sourceTree = "<absolute>"; };
 		7594A2101E8446F800FAC148 /* HeroesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
 		7594A2111E8446F800FAC148 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
 		7594A2121E8446F800FAC148 /* PreGameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreGameOverViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +105,15 @@
 		7594A2191E84476500FAC148 /* GameSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 		7594A21D1E8582C800FAC148 /* ContiniueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContiniueViewController.swift; sourceTree = "<group>"; };
 		7594A2201E871B8100FAC148 /* sub1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sub1.sks; sourceTree = "<group>"; };
+		75B165261F403EE70078B6F7 /* Emitters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitters.swift; sourceTree = "<group>"; };
+		75B165281F40458C0078B6F7 /* GenerationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerationNode.swift; sourceTree = "<group>"; };
+		75B1652A1F4046840078B6F7 /* CreationEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationEnemy.swift; sourceTree = "<group>"; };
+		75B1652E1F4056C90078B6F7 /* SoundSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundSettings.swift; sourceTree = "<group>"; };
+		75B165301F4062C70078B6F7 /* LevelUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelUp.swift; sourceTree = "<group>"; };
+		75B165321F409B040078B6F7 /* CreationHeroes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationHeroes.swift; sourceTree = "<group>"; };
+		75B165341F409E960078B6F7 /* SceneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 		75E8E8AE1E94D28200B2F65E /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
-		75F2DC081E89625800706855 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
+		75F2DC081E89625800706855 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
 		75F2DC0A1E89715C00706855 /* heroesclick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heroesclick.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,8 +141,7 @@
 		7585DF061E89545E0066F07D /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				75F2DC081E89625800706855 /* Click.mp3 */,
-				7585DF041E8954550066F07D /* misc_menu_2.wav */,
+				75F2DC081E89625800706855 /* click.mp3 */,
 				7585DF0A1E8957E50066F07D /* positive.wav */,
 				7585DF081E8956400066F07D /* negative.wav */,
 				75F2DC0A1E89715C00706855 /* heroesclick.wav */,
@@ -145,6 +154,7 @@
 		7585DF071E89546D0066F07D /* Emitters */ = {
 			isa = PBXGroup;
 			children = (
+				7585DEFC1E8940880066F07D /* bubbleee.png */,
 				7594A1F51E84463900FAC148 /* GameScene.sks */,
 				7594A1F71E84465400FAC148 /* bubble.sks */,
 				7594A1F91E84465B00FAC148 /* water.sks */,
@@ -176,14 +186,12 @@
 			isa = PBXGroup;
 			children = (
 				7594A1DD1E8445E500FAC148 /* AppDelegate.swift */,
-				7594A2051E8446A800FAC148 /* Touches.swift */,
-				7594A2091E8446B600FAC148 /* Physics.swift */,
-				7594A2071E8446AD00FAC148 /* Animation.swift */,
 				7594A2191E84476500FAC148 /* GameSettings.swift */,
 				7594A2031E8446A200FAC148 /* GameScene.swift */,
+				75B165361F40A1720078B6F7 /* Settings  */,
+				75B165371F40A2CF0078B6F7 /* Scene */,
 				7594A21F1E8582D900FAC148 /* VC */,
 				7594A20D1E8446CA00FAC148 /* Assets.xcassets */,
-				7585DEFC1E8940880066F07D /* bubbleee.png */,
 				7585DF071E89546D0066F07D /* Emitters */,
 				7585DF061E89545E0066F07D /* Sound */,
 				7594A1EC1E8445E500FAC148 /* LaunchScreen.storyboard */,
@@ -196,15 +204,38 @@
 		7594A21F1E8582D900FAC148 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				7594A20F1E8446F800FAC148 /* GameViewController.swift */,
-				7594A2131E8446F800FAC148 /* GameOverViewController.swift */,
-				7594A2011E84469100FAC148 /* StartsViewController.swift */,
 				7594A2101E8446F800FAC148 /* HeroesViewController.swift */,
 				7594A2111E8446F800FAC148 /* PauseViewController.swift */,
+				7594A2131E8446F800FAC148 /* GameOverViewController.swift */,
 				7594A2121E8446F800FAC148 /* PreGameOverViewController.swift */,
 				7594A21D1E8582C800FAC148 /* ContiniueViewController.swift */,
+				7594A20F1E8446F800FAC148 /* GameViewController.swift */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		75B165361F40A1720078B6F7 /* Settings  */ = {
+			isa = PBXGroup;
+			children = (
+				7594A2071E8446AD00FAC148 /* Animation.swift */,
+				7594A2051E8446A800FAC148 /* Touches.swift */,
+				7594A2091E8446B600FAC148 /* Physics.swift */,
+				75B1652E1F4056C90078B6F7 /* SoundSettings.swift */,
+				75B165261F403EE70078B6F7 /* Emitters.swift */,
+				75B165301F4062C70078B6F7 /* LevelUp.swift */,
+			);
+			name = "Settings ";
+			sourceTree = "<group>";
+		};
+		75B165371F40A2CF0078B6F7 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				75B165341F409E960078B6F7 /* SceneManager.swift */,
+				75B165321F409B040078B6F7 /* CreationHeroes.swift */,
+				75B1652A1F4046840078B6F7 /* CreationEnemy.swift */,
+				75B165281F40458C0078B6F7 /* GenerationNode.swift */,
+			);
+			name = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +330,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7585DF051E8954550066F07D /* misc_menu_2.wav in Resources */,
 				7594A1F61E84463900FAC148 /* GameScene.sks in Resources */,
 				7594A1F81E84465400FAC148 /* bubble.sks in Resources */,
 				7594A2211E871B8200FAC148 /* sub1.sks in Resources */,
@@ -312,7 +342,7 @@
 				7585DEFD1E8940880066F07D /* bubbleee.png in Resources */,
 				7594A20E1E8446CA00FAC148 /* Assets.xcassets in Resources */,
 				7585DF031E8949730066F07D /* pickCoin.mp3 in Resources */,
-				75F2DC091E89625800706855 /* Click.mp3 in Resources */,
+				75F2DC091E89625800706855 /* click.mp3 in Resources */,
 				7585DF0B1E8957E50066F07D /* positive.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,11 +354,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B1652F1F4056C90078B6F7 /* SoundSettings.swift in Sources */,
+				75B1652B1F4046840078B6F7 /* CreationEnemy.swift in Sources */,
+				75B165291F40458C0078B6F7 /* GenerationNode.swift in Sources */,
 				7594A2061E8446A800FAC148 /* Touches.swift in Sources */,
-				7594A2021E84469100FAC148 /* StartsViewController.swift in Sources */,
 				7594A21A1E84476500FAC148 /* GameSettings.swift in Sources */,
 				7594A21E1E8582C800FAC148 /* ContiniueViewController.swift in Sources */,
 				7594A2041E8446A200FAC148 /* GameScene.swift in Sources */,
+				75B165271F403EE70078B6F7 /* Emitters.swift in Sources */,
+				75B165351F409E960078B6F7 /* SceneManager.swift in Sources */,
 				7594A2081E8446AD00FAC148 /* Animation.swift in Sources */,
 				7594A2141E8446F800FAC148 /* GameViewController.swift in Sources */,
 				7594A2171E8446F800FAC148 /* PreGameOverViewController.swift in Sources */,
@@ -337,6 +371,8 @@
 				7594A2161E8446F800FAC148 /* PauseViewController.swift in Sources */,
 				7594A20A1E8446B600FAC148 /* Physics.swift in Sources */,
 				7594A1DE1E8445E500FAC148 /* AppDelegate.swift in Sources */,
+				75B165311F4062C70078B6F7 /* LevelUp.swift in Sources */,
+				75B165331F409B040078B6F7 /* CreationHeroes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +543,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Sea Swap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vakurin.Sea-Swaps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,6 +562,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Sea Swap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vakurin.Sea-Swaps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
